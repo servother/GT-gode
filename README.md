@@ -5,3 +5,4 @@ Golang GUI demo
 cd src/test    //进入test目录
 go build     //生成可执行文件
 ```
+2. utils目录下存放一些常用函数
