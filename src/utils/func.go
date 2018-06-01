@@ -8,6 +8,7 @@ import (
 	"io"
 )
 
+//获取http包
 func HelpRead(resp *http.Response) {
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
@@ -17,6 +18,7 @@ func HelpRead(resp *http.Response) {
 	fmt.Println(string(body))
 }
 
+//检查err
 func CheckErr(err error) {
 	if err != nil {
 		panic(err)
@@ -34,6 +36,7 @@ func checkFileIsExist(filename string) bool {
 	return exist
 }
 
+//创建文件
 func createFile(filename, wstring string, f *os.File, err1 error) {
 	if checkFileIsExist(filename) { //如果文件存在
 		f, err1 = os.OpenFile(filename, os.O_APPEND, 0666) //打开文件
