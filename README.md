@@ -1,2 +1,5 @@
 # GT-gode
-Golang demo
+Golang GUI demo
+1.  ''' cd src/test
+go build 
+'''
