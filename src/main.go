@@ -7,7 +7,6 @@ import (
 	"os"
 	"fmt"
 	"io"
-	"gindemo/utils"
 	"os/exec"
 )
 
